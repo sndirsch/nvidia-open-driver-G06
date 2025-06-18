@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Tue Apr 15 14:16:06 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
+
+- update to 570.144 (boo#1241231) 
+  * improve Bourne shell compatibility in scripts
+  * forgot to update also support .json file for 570.133.07
+  * json-to-pci-id-list.py: fixed '--closed' option for proprietary driver
+  * limit build of -azure flavor to SP6
+
+-------------------------------------------------------------------
 Sun Mar 23 10:42:54 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
 
 - update to 570.133.07 (boo#1239653)
