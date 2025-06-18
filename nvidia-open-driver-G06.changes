@@ -1,7 +1,12 @@
 -------------------------------------------------------------------
+Tue Jun 17 15:21:55 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
+
+- update to 570.169 (boo#1244614)
+
+-------------------------------------------------------------------
 Wed May 14 14:44:57 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
 
-- update non-CUDA variant to 570.153.02 (boo#1243192)
+- update to 570.153.02 (boo#1243192)
 
 -------------------------------------------------------------------
 Tue Apr 15 14:16:06 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
