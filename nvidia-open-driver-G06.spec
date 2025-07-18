@@ -37,7 +37,7 @@
 
 %define compress_modules xz
 Name:           nvidia-open-driver-G06
-Version:        570.169
+Version:        570.172.08
 Release:        0
 Summary:        NVIDIA open kernel module driver for Turing GPUs and later
 License:        GPL-2.0 and MIT
@@ -51,7 +51,6 @@ Source9:        kmp-preun.sh
 Source11:       nvidia-open-driver-G06.rpmlintrc
 Source12:       supported-gpus-%{version}.json
 Source13:       supported-gpus.json.LICENSE
-Patch0:         persistent-nvidia-id-string.patch
 BuildRequires:  %{kernel_module_package_buildreqs}
 BuildRequires:  gcc-c++
 BuildRequires:  kernel-source
@@ -174,7 +173,7 @@ for flavor in %kernel_flavors; do
 	  export SYSSRC=/usr/src/linux
 	fi
 	export SYSOUT=/usr/src/linux-obj/%_target_cpu/$flavor
-        make %{?_smp_mflags} modules
+        make %{?_smp_mflags} modules modules DATE="date -d @${SOURCE_DATE_EPOCH:-$(date +%s)}" NV_BUILD_HOST=OBS HOSTNAME=OBS
         popd
 done
 

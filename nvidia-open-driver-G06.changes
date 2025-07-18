@@ -1,4 +1,23 @@
 -------------------------------------------------------------------
+Fri Jul 11 10:53:09 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
+
+- update non-CUDA variant to 570.172.08 (boo#1246327)
+- supersedes
+  * 0003-nv-dmabuf-Inline-dma_buf_attachment_is_dynamic.patch
+  * 0004-nvidia-uvm-Disable-SVA-support-for-6.16.patch
+
+-------------------------------------------------------------------
+Tue Jun 24 11:22:59 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
+
+- 0003-nv-dmabuf-Inline-dma_buf_attachment_is_dynamic.patch
+  0004-nvidia-uvm-Disable-SVA-support-for-6.16.patch
+  * buildfixes against Kernel 6.16 picked up from
+    https://github.com/CachyOS/CachyOS-PKGBUILDS.git
+    --> nvidia/nvidia-utils
+- Drop persistent-nvidia-id-string.patch - solved via make params
+  instead
+
+-------------------------------------------------------------------
 Tue Jun 17 15:21:55 UTC 2025 - Stefan Dirsch <sndirsch@suse.com>
 
 - update to 570.169 (boo#1244614)
